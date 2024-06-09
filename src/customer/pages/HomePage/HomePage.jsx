@@ -18,7 +18,7 @@ function HomePage() {
                 <HomeSectionCarousel data={men_shirt} sectionName={"Mens Shirt"}/>
                 <HomeSectionCarousel data={men_jeans} sectionName={"Mens Jeans"}/>
                 <HomeSectionCarousel data={mensShoes} sectionName={"Mens Shoes"}/>
-                <HomeSectionCarousel data={dressPage1}/>
+                <HomeSectionCarousel data={dressPage1} sectionName={"Women Dress"}/>
             </div>
         </div>
     )

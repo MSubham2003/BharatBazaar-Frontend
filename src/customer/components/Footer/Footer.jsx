@@ -3,6 +3,9 @@ import React from 'react'
 import { Button } from '@headlessui/react'
 import InstagramIcon from '@mui/icons-material/Instagram';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import AddIcCallIcon from '@mui/icons-material/AddIcCall';
 
 const Footer = () => {
     return (
@@ -78,9 +81,12 @@ const Footer = () => {
                 </Grid>
                 
             </Grid>
-            <div className="text-center text-white bg-slate-950 text-sm py-5">
-            ©2024 Bharat Bazaar. All Rights Reserved <br />Made by Subham Mohanty<br />Contact {'  '} <EmailOutlinedIcon onClick={() => window.open("https://mohantysubham853@gmail.com")}/>
-            <InstagramIcon className="cursor-pointer" onClick={() => window.open('https://stackoverflow.com/')}/>
+            <div className="text-center text-white bg-slate-950 text-sm py-5 ">
+            ©2024 Bharat Bazaar. All Rights Reserved <br />Made by Subham Mohanty<br />
+            Contact:- +91 9348228772 <br />  <EmailOutlinedIcon className="cursor-pointer mx-3 mt-3" onClick={() => window.open("https://mohantysubham853@gmail.com")}/>
+            <InstagramIcon className="cursor-pointer mx-3 mt-3" onClick={() => window.open('https://www.instagram.com/subham___m/?hl=en')}/>
+            <GitHubIcon className="cursor-pointer mx-3 mt-3" onClick={() => window.open('https://github.com/MSubham2003')}/>
+            <LinkedInIcon className="cursor-pointer mx-3 mt-3" onClick={() => window.open('https://www.linkedin.com/in/subhammohanty2003/')}/>
             </div>
         </div>
     )

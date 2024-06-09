@@ -12,11 +12,31 @@ const HomeSectionCarousel = ({data,sectionName}) => {
     const items = data.slice(0, 10).map((item) => <HomeSectionCard key={item.id} product={item} />);
 
     const responsive = {
-        0: { items: 1 },
-        400: { items: 2 },
-        720: { items: 3 },
-        1024: { items: 5.5 },
+        0: {
+            items: 1.5,
+            itemsFit: "contain",
+          },
+          568: {
+            items: 2.5,
+            itemsFit: "contain",
+          },
+          820: {
+            items: 4,
+            itemsFit: "contain",
+          },
+          1024: {
+            items: 5.5,
+            itemsFit: "contain",
+          },
     };
+
+    const getVisibleItemsCount = () => {
+        const width = window.innerWidth;
+        if (width >= 1024) return 5.5;
+        if (width >= 820) return 4;
+        if (width >= 568) return 2.5;
+        return 2;
+    }
 
     const slidePrev = () => {
         if (carouselRef.current) {
@@ -62,7 +82,7 @@ const HomeSectionCarousel = ({data,sectionName}) => {
                     onClick={slideNext}
                     sx={{ position: 'absolute', top: "8rem", right: "0rem", transform: "translateX(50%) rotate(90deg)" }}
                     aria-label="next"
-                    disabled={activeIndex >= items.length - 5}
+                    disabled={activeIndex >= items.length - getVisibleItemsCount()}
                 >
                     <KeyboardArrowLeftIcon sx={{ transform: "rotate(90deg)" }} />
                 </Button>

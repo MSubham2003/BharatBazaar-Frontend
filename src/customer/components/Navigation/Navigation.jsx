@@ -237,9 +237,10 @@ export default function Navigation() {
 
                   <span className="sr-only">Your Company</span>
                   <img
+                  onClick={()=> window.location.reload()}
                     src="https://th.bing.com/th/id/OIP.HK074GpsvMQYDKmOfV3i2AHaEc?rs=1&pid=ImgDetMain"
                     alt="BharatBazaar"
-                    className="h-auto w-20 mr-2"
+                    className="cursor-pointer h-auto w-20 mr-2"
                   />
 
               </div>

@@ -1,4 +1,4 @@
-export const color = [
+ export const color = [
     "white",
     "Black",
     "Red",
