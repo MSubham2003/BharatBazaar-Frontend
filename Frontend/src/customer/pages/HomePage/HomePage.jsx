@@ -1,6 +1,5 @@
 import React from 'react'
 import MainCarousel from '../../components/HomeCarousel/MainCarousel'
-import HomeSectionCard from '../../components/HomeSectionCard/HomeSectionCard'
 import HomeSectionCarousel from '../../components/HomeSectionCarousel/HomeSectionCarousel'
 import { men_kurta } from '../../../data/Men/men_kurta'
 import { dressPage1 } from "../../../data/dress/page1"

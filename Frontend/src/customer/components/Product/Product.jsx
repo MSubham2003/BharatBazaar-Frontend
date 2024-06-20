@@ -264,7 +264,7 @@ export default function Product() {
                               {section.options.map((option, optionIdx) => (
                                 <div key={option.value} className="flex items-center">
                                   <input
-                                  onChange={()=>handleFilter(option.value,section.id)}
+                                    onChange={() => handleFilter(option.value, section.id)}
                                     id={`filter-${section.id}-${optionIdx}`}
                                     name={`${section.id}[]`}
                                     defaultValue={option.value}
@@ -316,14 +316,14 @@ export default function Product() {
 
                                     <>
                                       <FormControlLabel
-                                      className="opacity-60"
-                                    value={option.value}
-                                    control={<Radio />}
-                                    label={option.label}
-                                    onChange={(e) =>
-                                      handleRadioFilterChange(e, section.id)
-                                    }
-                                  />
+                                        className="opacity-60"
+                                        value={option.value}
+                                        control={<Radio />}
+                                        label={option.label}
+                                        onChange={(e) =>
+                                          handleRadioFilterChange(e, section.id)
+                                        }
+                                      />
                                     </>
                                   ))}
                                 </RadioGroup>
